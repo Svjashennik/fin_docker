@@ -36,5 +36,3 @@ RUN sed -i 's/www-data/testdock/g' /etc/nginx/nginx.conf
 EXPOSE 80
 #Запускаем nginx при запуске контейнера
 CMD ["nginx","-g","daemon off;"]
-LABEL authors="artemantipov"
-LABEL description="Простой веб-сервер nginx на ubuntu"
